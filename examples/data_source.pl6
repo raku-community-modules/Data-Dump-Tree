@@ -12,7 +12,7 @@ Q<<{
 my $parsed = JSON::Tiny::Grammar.parse: $JSON ;
 
 # use a module that's located in the examples directory
-require ($*PROGRAM.parent(1).absolute ~ "/CustomSetup/DataSource.pm6")  <DataSource> ;
+require ($*PROGRAM.parent(1).absolute ~ "/CustomSetup/DataSource.rakumod")  <DataSource> ;
 
 use Data::Dump::Tree::ExtraRoles ;
 ddt $parsed, :title<JSON >, :does[DDTR::PerlString,DDTR::MatchDetails] ;

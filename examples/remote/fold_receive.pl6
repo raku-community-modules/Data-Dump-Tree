@@ -1,4 +1,4 @@
-use v6.c;
+use v6.d;
 
 use Data::Dump::Tree ;
 use Data::Dump::Tree::Foldable ;

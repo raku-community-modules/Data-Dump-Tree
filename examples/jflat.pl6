@@ -12,7 +12,7 @@ my $json = from-json($file_name.IO.slurp) ;
 
 my $d = Data::Dump::Tree.new ;
 
-require ($*PROGRAM.parent(1).absolute ~ "/CustomSetup/DataSource.pm6")  <DataSource> ;
+require ($*PROGRAM.parent(1).absolute ~ "/CustomSetup/DataSource.rakumod")  <DataSource> ;
 my regex { 1 }
 
 $d.ddt: $json, 

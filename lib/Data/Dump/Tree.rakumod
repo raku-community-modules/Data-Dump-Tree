@@ -249,7 +249,9 @@ unless @.kb_colors.elems
 	}
 @!kb_colors_cycle = |@.kb_colors xx  * ;
 
-my $width= %+((qx[stty size] || '0 80') ~~ /\d+ \s+ (\d+)/)[0] ;
+my $stty-size = '0 80';
+$stty-size = qx[stty size] unless $*DISTRO.name eq 'mswin32';
+my $width = %+(($stty-size) ~~ /\d+ \s+ (\d+)/)[0] ;
 
 $.width //= $width ;
 $.width = $width if @.glyph_filters ; # $.width can be set to Inf, we can't pad that far.

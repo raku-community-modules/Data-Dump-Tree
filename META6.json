@@ -6,7 +6,7 @@
         "Nadim Khemir",
         "Steve Roe"
     ],
-    "auth": "zef:librasteve",
+    "auth": "zef:raku-community-modules",
     "depends": [
         "Terminal::Print"
     ],

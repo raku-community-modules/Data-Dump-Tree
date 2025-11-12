@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/nkh/P6-Data-Dump-Tree.svg?branch=release)](https://travis-ci.org/nkh/P6-Data-Dump-Tree)
 
-## For perl6
-
 Data::Dump::Tree - Renders data structures in a tree fashion with colors
 
 Some blog entries you may want to look at:

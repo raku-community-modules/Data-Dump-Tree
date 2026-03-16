@@ -1,7 +1,7 @@
 {
     "name": "Data::Dump::Tree",
     "description": "Render data structures as trees; user definable filters",
-    "version": "2.9.3",
+    "version": "2.9.4",
     "authors": [
         "Nadim Khemir",
         "Steve Roe"
